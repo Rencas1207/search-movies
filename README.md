@@ -11,6 +11,8 @@ Alternativas para CSS que te saque de apuro:
 Water css
 Bolt css
 
+Usamo debounce: `npm i just-debounce-it -E`
+
 ---
 
 Requerimientos:
@@ -31,4 +33,4 @@ Primera iteración:
 
 (✅) Haz que la búsqueda se haga automáticamente al escribir.
 
-() Evita que se haga la búsqueda continuamente al escribir (debounce)
+(✅) Evita que se haga la búsqueda continuamente al escribir (debounce)
