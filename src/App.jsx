@@ -38,11 +38,12 @@ function useSearch() {
 
 
 function App() {
-  const { movies } = useMovies();
   const { search, updateSearch, error } = useSearch();
+  const { movies, getMovies, loading } = useMovies({ search });
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    getMovies();
   }
 
   const handleChange = (e) => {
@@ -65,6 +66,9 @@ function App() {
       </header>
 
       <main>
+        {
+          loading ? <p>Cargando...</p> : null
+        }
         <Movies movies={movies} />
       </main>
     </div>
